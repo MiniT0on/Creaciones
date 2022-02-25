@@ -31,7 +31,7 @@ header#Cabezal > div.PRINCIPAL__Cabezal{
 }
 
 header#Cabezal > div.PRINCIPAL__Cabezal > div.LOG__Principal_Cabezal{
-    position: relative;
+    position: absolute;
     background-color: var(--Fondo_LOG__Principal_Cabezal);
     width: 200px;
     height: 100%;
@@ -62,9 +62,38 @@ header#Cabezal > div.PRINCIPAL__Cabezal > div.LOG__Principal_Cabezal > label.El_
     bottom: 0;
 }
 
+header#Cabezal > div.PRINCIPAL__Cabezal > div.BarraBuscadora__Principal_Cabezal{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    top: 0 !important;
+    background-color: var(--Fondo_BarraBuscadora__Principal_Cabezal);
+    margin: 0 auto !important;
+    /* border-radius: 10%; */
+    border: 2px solid white;
+    /* Centreando items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header#Cabezal > div.PRINCIPAL__Cabezal > div.BarraBuscadora__Principal_Cabezal > input.Input__
+{
+    border: none;
+    height: 80%;
+    width: 90%;
+    background-color: var(--Fondo_Input__);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+}
+
 :root{
     --Fondo_Header: #312f2f;
     --Fondo_Main: transparent;
     --Fondo_PRINCIPAL_Cabezal: transparent;
     --Fondo_LOG__Principal_Cabezal: transparent;
+    --Fondo_BarraBuscadora__Principal_Cabezal: transparent;
+    --Fondo_Input__: transparent;
 }
